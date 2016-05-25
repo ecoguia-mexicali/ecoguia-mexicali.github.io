@@ -9,36 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">EcoGuía Mexicali</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/ecoguia-mexicali.github.io">Inicio</a></li>
-                <li><a href="Noticias.html">Noticias</a></li>
-                <li><a href="Informacion.html">Informacion</a></li>
-                <li><a href="Acciones.html">Acciones</a></li>
-                <li class="dropdown">
-                    <a href="Proyectos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proyectos <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="proyecto-purificadora.html">Purificadora Doméstica</a></li>
-                        <li><a href="proyecto-horno.html">Horno Solar</a></li>
-                        <li><a href="proyecto-maceta.html">Maceta Colgante</a></li>
-                        <li><a href="proyecto-semillas.html">Bomba de Semillas</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
+<div id="navbar"></div>
 
 <div class="jumbotron">
     <div class="container">
@@ -91,3 +62,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
+<script>
+    $(function(){
+        $("#navbar").load("navbar.html");
+    });
+</script>
